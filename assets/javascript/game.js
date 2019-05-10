@@ -51,6 +51,5 @@ document.onkeyup = function (event) {
 document.querySelector("#winsText").innerHTML = "Wins: " + wins;
 document.querySelector("#lossesText").innerHTML = "Losses: " + losses;
 document.querySelector("#numGuessRemainText").innerHTML = "Number of Guesses Remaining: " + numGuessRemain;
-// THIS LINE DOESN'T WORK ??????
-document.querySelector("lettersGuessedText").innerHTML = "Letters Guessed:" + lettersGuessed.join(", ");
+document.querySelector("#lettersGuessedText").innerHTML = "Letters Guessed:" + lettersGuessed.join(", ");
 }
