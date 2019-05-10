@@ -15,7 +15,7 @@ window.onload = function() {
 }
 
 // when a key is pressed
-document.onkeyup = function (event) {
+document.onkeypress = function (event) {
     var keyPress = event.key;
     lettersGuessed.push(keyPress);
     console.log(lettersGuessed)
@@ -51,5 +51,5 @@ document.onkeyup = function (event) {
 document.querySelector("#winsText").innerHTML = "Wins: " + wins;
 document.querySelector("#lossesText").innerHTML = "Losses: " + losses;
 document.querySelector("#numGuessRemainText").innerHTML = "Number of Guesses Remaining: " + numGuessRemain;
-document.querySelector("#lettersGuessedText").innerHTML = "Letters Guessed:" + lettersGuessed.join(", ");
+document.querySelector("#lettersGuessedText").innerHTML = "Letters Guessed:  " + lettersGuessed.join(", ");
 }
